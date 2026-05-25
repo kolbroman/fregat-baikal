@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>База отдыха Фрегат — Байкал</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark header-absolute">
+    <div class="container align-items-center">
+        
+        <!-- Кнопка для мобильных -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- ЛЕВАЯ ЧАСТЬ: Меню -->
+        <div class="collapse navbar-collapse col-lg-5" id="navbarContent">
+            <ul class="navbar-nav gap-3">
+                <li class="nav-item"><a class="nav-link text-white p-0" href="#">Номера и цены</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white p-0" href="#" role="button" data-bs-toggle="dropdown">
+                        Услуги
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Сибирский чан</a></li>
+                        <li><a class="dropdown-item" href="#">Мангал на природе</a></li>
+                        <li><a class="dropdown-item" href="#">Прокат велосипедов</a></li>
+                        <li><a class="dropdown-item" href="#">Ресторан “Фрегат”</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white p-0" href="#">О базе отдыха</a></li>
+                <li class="nav-item"><a class="nav-link text-white p-0" href="#">Отзывы</a></li>
+                <li class="nav-item"><a class="nav-link text-white p-0" href="#">Контакты</a></li>
+            </ul>
+        </div>
+
+        <!-- ЦЕНТР: Логотип -->
+        <a class="navbar-brand mx-auto col-lg-2 text-center" href="#">
+            <img src="media/log22o1.png" alt="ФРЕГАТ" style="width: 120px;">
+        </a>
+
+        <!-- ПРАВАЯ ЧАСТЬ: Контакты -->
+        <div class="header-contacts-block col-lg-5 d-none d-lg-flex justify-content-end align-items-center gap-4">
+            <div class="phones d-flex flex-column flex-xl-row gap-3">
+                <a href="tel:83952560026" class="phone-link">8 (3952) 56-00-26</a>
+                <a href="tel:83952560026" class="phone-link">8 (3952) 56-00-26</a>
+            </div>
+            <div class="socials d-flex gap-2">
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Написать в WhatsApp">
+             <img src="media/whatsapp-logo1.png" alt="wa" width="20">
+            </a>
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Наш Instagram">
+            <img src="media/instagram1.png" alt="ig" width="20">
+            </a>
+            <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Мы в Viber">
+            <img src="media/viber-logo1.png" alt="vb" width="20">
+           </a>
+        </div>
+            <!-- Стало: -->
+            <button type="button" class="btn-call-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCallback" aria-controls="offcanvasCallback">
+                 Заказать звонок
+                </button>
+        </div>
+
+    </div>
+</nav>
+
+    <!-- БАННЕР -->
+    <section class="hero">
+        <img src="media/Arrow4.png" class="arrow arrow-l" alt="назад">
+        <img src="media/Arrow5.png" class="arrow arrow-r" alt="вперед">
+        <div class="container hero-main-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Байкал</h1>
+                <p class="subtitle">Отдых на берегу Малого моря озера</p>
+                <a href="#" class="btn-reserve">ЗАБРОНИРОВАТЬ НОМЕР</a>
+            </div>
+            <div class="hero-review">
+                <h3>Отзывы отдыхающих</h3>
+                <p>Не в первый раз отдыхаем на этой базе. Как всегда все великолепно: радушный прием, отлично питание и благоустроенный пляж.</p>
+                <p class="name">Светлана Кулина</p>
+            </div>
+        </div>
+        <div class="hero-previews">
+            <div class="container">
+                <div class="preview-grid">
+                    <div class="preview-item"><img src="media/Rectangle9.png"><div><h4>Сауна на берегу</h4><span>подробнее →</span></div></div>
+                    <div class="preview-item"><img src="media/motor-yatch.png"><div><h4>Скоростной катер</h4><span>подробнее →</span></div></div>
+                    <div class="preview-item"><img src="media/рестбайк.jpg"><div><h4>Ресторан с видом</h4><span>подробнее →</span></div></div>
+                    <div class="preview-item"><img src="media/image19.png"><div><h4>Сибирский чан</h4><span>подробнее →</span></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container main-content">
+        
+        <!-- СЕКЦИЯ 6 ПРИЧИН -->
+        <section id="reasons" class="reasons-wrapper">
+            <div class="reasons-header">
+                <span class="big-6">6</span>
+                <h2 class="reasons-title">Причин, почему для отдыха на<br>Байкале нужно выбрать “Фрегат”</h2>
+            </div>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <img src="media/размчел185200.png" class="main-img">
+                    <div class="reason-content">
+                        <img src="media/user.png" class="reason-icon">
+                        <h3 class="reason-subtitle">Размещение до 70 человек</h3>
+                        <p class="reason-text">1 гостиничный комплекс с номерами категории "Стандарт", JUNIOR SUIT и "Люкс", а так же 4 отдельных коттеджа.</p>
+                    </div>
+                </div>
+                <div class="reason-card">
+                    <img src="media/отдсем185200.png" class="main-img">
+                    <div class="reason-content">
+                        <img src="media/Иконка.png" class="reason-icon">
+                        <h3 class="reason-subtitle">Отдых для всей семьи</h3>
+                        <p class="reason-text">Большая игровая зона, беседки с мангальной зоной, детская и спортивная площадка.</p>
+                    </div>
+                </div>
+                <div class="reason-card">
+                    <img src="media/6гек185200.png" class="main-img">
+                    <div class="reason-content">
+                        <img src="media/compass.png" class="reason-icon">
+                        <h3 class="reason-subtitle">Территория более 6 гектар</h3>
+                        <p class="reason-text">Закрытая территория более 6 Га, своя береговая линия, два оборудованных пляжа, спуск для водной техники, вертолетная площадка</p>
+                    </div>
+                </div>
+                <div class="reason-card">
+                    <img src="media/малморе185200.png" class="main-img">
+                    <div class="reason-content">
+                        <img src="media/Asset 12.png" class="reason-icon">
+                        <h3 class="reason-subtitle">Малое море (Байкал)</h3>
+                        <p class="reason-text">Здесь редко идет дождь и бывает пасмурно. Это одно из немногих мест на планете, где практически все дни в году - солнечные.</p>
+                    </div>
+                </div>
+                <div class="reason-card">
+                    <img src="media/ресткомп185200.png" class="main-img">
+                    <div class="reason-content">
+                        <img src="media/Layer 2.png" class="reason-icon">
+                        <h3 class="reason-subtitle">Ресторанный комплекс</h3>
+                        <p class="reason-text">Ресторанный зал на 100 посадочных мест с панорамным видом на Байкал, закрытая веранда.</p>
+                    </div>
+                </div>
+                <div class="reason-card">
+                    <img src="media/компусл185200.png" class="main-img">
+                    <div class="reason-content">
+                        <img src="media/Иконка (1).png" class="reason-icon">
+                        <h3 class="reason-subtitle">Комплекс услуг</h3>
+                        <p class="reason-text">Наша база отдыха предлагает множество услуг: сауна на берегу, банный чан, прокат велосипедов, конференц-зал до 50 человек и многое другое.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- СЕКЦИЯ: ВАРИАНТЫ РАЗМЕЩЕНИЯ -->
+<section id="accommodation" class="accommodation-container">
+    <h2 class="accommodation-title">Варианты размещения</h2>
+    <div class="accommodation-tabs">
+        <button class="acc-tab active">Гостиничный корпус</button>
+        <button class="acc-tab">Коттеджи (Отдельные дома)</button>
+    </div>
+    <div class="accommodation-grid">
+        
+        <!-- КАРТОЧКА 1 (С плашкой) -->
+        <div class="acc-card">
+            <div class="acc-img-wrapper">
+                <img src="media/ном1станд1.png" class="acc-main-img">
+                <div class="acc-badge">Топ продаж</div>
+            </div>
+            <div class="acc-content">
+                <h3 class="acc-card-title">Номер 1-категории - "Стандарт"</h3>
+                <p class="acc-card-desc">Двухместный однокомнатный номер с двумя односпальными кроватями...</p>
+                <div class="acc-features">
+                    <div class="feat"><img src="media/галочка.png"> Кондиционер</div>
+                    <div class="feat">Кол-во. номеров: 9</div>
+                    <div class="feat"><img src="media/галочка.png"> Душевая кабина</div>
+                    <div class="feat">
+                    Цены за номер: от 3500р. 
+                     <span class="ms-1" 
+                     style="cursor: pointer; color: #4C65AD;"
+                    data-bs-toggle="popover" 
+                   title="Что входит в стоимость?" 
+           data-bs-content="В стоимость включено: проживание, завтрак (шведский стол), пользование охраняемой парковкой и Wi-Fi на территории базы.">
+        <img src="media/галочка.png" style="width: 15px; filter: hue-rotate(180deg);"> <!-- Или любая мелкая иконка -->
+        (подробнее)
+    </span>
+</div>
+                    <div class="feat"><img src="media/галочка.png"> Телевизор</div>
+                </div>
+                <div class="acc-footer">
+                    <a href="#" class="acc-btn-more">ПОДРОБНЕЕ</a>
+                    <div class="acc-status">Свободные номера:<br><span class="in-stock"><img src="media/галочка.png"> в наличии</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- КАРТОЧКА 2 (Без плашки) -->
+        <div class="acc-card">
+            <div class="acc-img-wrapper">
+                <img src="media/ном1станд2.png" class="acc-main-img">
+            </div>
+            <div class="acc-content">
+                <h3 class="acc-card-title">Номер 1-категории - "Стандарт"</h3>
+                <p class="acc-card-desc">Двухместный однокомнатный номер с двумя односпальными кроватями...</p>
+                <div class="acc-features">
+                    <div class="feat"><img src="media/галочка.png"> Кондиционер</div>
+                    <div class="feat">Кол-во. номеров: 9</div>
+                    <div class="feat"><img src="media/галочка.png"> Душевая кабина</div>
+                    <div class="feat">Цены за номер: от 3500р.</div>
+                    <div class="feat"><img src="media/галочка.png"> Телевизор</div>
+                </div>
+                <div class="acc-footer">
+                    <a href="#" class="acc-btn-more">ПОДРОБНЕЕ</a>
+                    <div class="acc-status">Свободные номера:<br><span class="in-stock"><img src="media/галочка.png"> в наличии</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- КАРТОЧКА 3 (Без плашки) -->
+        <div class="acc-card">
+            <div class="acc-img-wrapper">
+                <img src="media/ном1станд3.png" class="acc-main-img">
+            </div>
+            <div class="acc-content">
+                <h3 class="acc-card-title">Номер 1-категории - "Стандарт"</h3>
+                <p class="acc-card-desc">Двухместный однокомнатный номер с двумя односпальными кроватями...</p>
+                <div class="acc-features">
+                    <div class="feat"><img src="media/галочка.png"> Кондиционер</div>
+                    <div class="feat">Кол-во. номеров: 9</div>
+                    <div class="feat"><img src="media/галочка.png"> Душевая кабина</div>
+                    <div class="feat">Цены за номер: от 3500р.</div>
+                    <div class="feat"><img src="media/галочка.png"> Телевизор</div>
+                </div>
+                <div class="acc-footer">
+                    <a href="#" class="acc-btn-more">ПОДРОБНЕЕ</a>
+                    <div class="acc-status">Свободные номера:<br><span class="in-stock"><img src="media/галочка.png"> в наличии</span></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="acc-pagination">
+        <span class="pg-num">01</span>
+        <div class="pg-line"></div>
+        <span class="pg-num">03</span>
+        <div class="pg-arrows"><img src="media/Arrow 4.png"><img src="media/Arrow 3.png"></div>
+    </div>
+</div>
+
+        <!-- БЛОК БРОНИРОВАНИЯ -->
+        <section class="booking-section-wrapper">
+            <div class="booking-header-steps">
+                <div class="step-item step-active"><img src="media/первыйномер (2).png"><span>Размещение</span></div>
+                <img src="media/штрихпунктир.png" class="step-divider">
+                <div class="step-item"><img src="media/второйномер (2).png"><span>Бронирование</span></div>
+                <img src="media/штрихпунктир.png" class="step-divider">
+                <div class="step-item"><img src="media/третийномер (2).png"><span>Оплата</span></div>
+            </div>
+            <div class="booking-flex-container">
+                <div class="booking-form-area">
+                    <h2 class="booking-main-title">Забронировать номер</h2>
+                    <form class="booking-grid-form">
+                        <div class="form-cols">
+                            <div class="col-left">
+                                <div class="date-row">
+                                    <div class="field-group"><label>Дата заезда</label><input type="text" placeholder="02-06-2021"></div>
+                                    <div class="field-group"><label>Дата отъезда</label><input type="text" placeholder="15-06-2021"></div>
+                                </div>
+                                <div class="field-group"><label>Вид жилья</label><input type="text" placeholder="Гостиничный корпус"></div>
+                                <div class="field-group"><label>Вид номера</label><input type="text" placeholder="Номер 1-Категории “Стандарт”"></div>
+                            </div>
+                            <div class="col-right">
+                                <div class="field-group"><label>Имя</label><input type="text" placeholder="Введите имя"></div>
+                                <div class="field-group"><label>Телефон</label><input type="text" placeholder="Введите телефон"></div>
+                                <div class="field-group"><label>Комментарий</label><textarea placeholder="Комментарий"></textarea></div>
+                            </div>
+                        </div>
+                        <button type="button" id="liveToastBtn" class="btn-submit-booking">ЗАБРОНИРОВАТЬ НОМЕР</button>
+                    </form>
+                </div>
+                <div class="booking-image-area"><img src="media/Картаномера.png"></div>
+            </div>
+        </section>
+
+        <!-- === УСЛУГИ И РАЗВЛЕЧЕНИЯ === -->
+        <section id="services" class="services-main-section">
+            <h2 class="services-title-head">Услуги и развлечения</h2>
+            <div class="services-grid-container">
+                
+                <div class="service-card">
+                    <img src="media/сибчан.png" class="service-img">
+                    <div class="service-info">
+                        <h3 class="service-name">Сибирский чан</h3>
+                        <p class="service-desc">Новинка в мире парения! Эта процедура замешана на чудодейственной силе огня и чистейшей байкальской воды в сочетании с сибирскими травами и эфирными ...</p>
+                        <div class="service-price">от 2000 рублей в час</div>
+                        <a href="#" class="service-btn">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="media/мангал.png" class="service-img">
+                    <div class="service-info">
+                        <h3 class="service-name">Мангал на природе</h3>
+                        <p class="service-desc">Приготовьте шашлык и насладитесь вкусной едой на открытового воздуха. На территории нашей базы расположена отличная беседка с большим столом ...</p>
+                        <div class="service-price">от 1000 рублей в час</div>
+                        <a href="#" class="service-btn">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="media/прокатвел.png" class="service-img">
+                    <div class="service-info">
+                        <h3 class="service-name">Прокат велосипедов</h3>
+                        <p class="service-desc">Для семейного отдыха и приятного времяпрепровождения мы предоставляем прокат качественных прогулочных велосипедов ...</p>
+                        <div class="service-price">от 500 рублей в час</div>
+                        <a href="#" class="service-btn">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="media/сауна.png" class="service-img">
+                    <div class="service-info">
+                        <h3 class="service-name">Сауна</h3>
+                        <p class="service-desc">В любое время года и при любой погоде, что может быть лучше настоящей сауны? Наша сауна — настоящая находка для ценителей и любителей парной.</p>
+                        <div class="service-price">от 4000 рублей в час</div>
+                        <a href="#" class="service-btn">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="media/рыбалка.png" class="service-img">
+                    <div class="service-info">
+                        <h3 class="service-name">Рыбалка</h3>
+                        <p class="service-desc">Традиционное русское увеселительное мероприятие, подарит огромное наслаждение и взрослым и детям! Рыбалка в районе мыса Мухор ...</p>
+                        <div class="service-price">от 2000 рублей в час</div>
+                        <a href="#" class="service-btn">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="media/конфзал.png" class="service-img">
+                    <div class="service-info">
+                        <h3 class="service-name">Конференц-зал</h3>
+                        <p class="service-desc">Если вы хотите совместить отдых и плодотворную работу с коллегами, произвести положительное впечатление на партнеров ...</p>
+                        <div class="service-price">от 1000 рублей в час</div>
+                        <a href="#" class="service-btn">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="media/рестфрег.png" class="service-img">
+                    <div class="service-info">
+                        <h3 class="service-name">Ресторан “Фрегат”</h3>
+                        <p class="service-desc">У гостей есть возможность оценить разнообразные блюда национальной русской кухни и выпить свежесваренного эспрессо или капучино.</p>
+                        <div class="service-price">от 5000 рублей в час</div>
+                        <a href="#" class="service-btn">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="media/ньюер.png" class="service-img">
+                    <div class="service-info">
+                        <h3 class="service-name">Новый год 2022</h3>
+                        <p class="service-desc">Банкетное меню Новогодняя ночь 2022 г. на одного человека: Закуски Мясная тарелка 75/25 гр. (Ростбиф, балык, сервелат ...</p>
+                        <div class="service-price">от 5000 рублей в час</div>
+                        <a href="#" class="service-btn">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- === ФОТОГРАФИИ МЕСТНОСТИ === -->
+<section id="photos" class="photos-main-section">
+            <h2 class="photos-title-head">Фотографии местности<br>и базы отдыха</h2>
+            
+            <div class="photos-grid-layout">
+                <img src="media/карт1.png" class="pg-1">
+                <img src="media/карт2.png" class="pg-2">
+                <img src="media/карт3.png" class="pg-3">
+                <img src="media/карт4.png" class="pg-4">
+                <img src="media/карт5.png" class="pg-5">
+                <img src="media/карт7.png" class="pg-7">
+                <img src="media/карт6.png" class="pg-6">
+                <img src="media/карт8.png" class="pg-8">
+            </div>
+
+            <div class="photos-footer-action">
+                <a href="#" class="btn-view-gallery">ПОСМОТРЕТЬ ФОТОГАЛЕРЕЮ</a>
+            </div>
+        </section>
+
+<section id="reviews" class="reviews-section">
+    <h2 class="reviews-main-title">Отзывы о базе отдыха “Фрегат”</h2>
+    
+    <div class="reviews-slider-container">
+        <!-- СТРАНИЦА 1 (Активная) -->
+        <div class="reviews-page active" id="revPage1">
+            <div class="reviews-grid">
+                <div class="review-item">
+                    <div class="review-bubble">
+                        <div class="bubble-header"><img src="media/апостраф.png" class="quote-icon"><img src="media/instagram 1.png" class="ig-icon"></div>
+                        <p class="review-text">"Не в первый раз отдыхаем на этой базе. Как всегда всё великолепно: радушный приём, отличная питание, уютное пребывание и благоустроенный пляж."</p>
+                    </div>
+                    <div class="review-author"><img src="media/настя.png" class="author-avatar"><div class="author-info"><h4 class="author-name">Анастасия Ли</h4><span class="review-date">02.10.2021</span></div></div>
+                </div>
+                <div class="review-item">
+                    <div class="review-bubble">
+                        <div class="bubble-header"><img src="media/апостраф.png" class="quote-icon"><img src="media/instagram 1.png" class="ig-icon"></div>
+                        <p class="review-text">"Отличное место для отдыха всей семьей. Дети в восторге от площадки, а мы от тишины и видов Байкала. Обязательно вернемся!"</p>
+                    </div>
+                    <div class="review-author"><div class="avatar-stack"><img src="media/синийкруг.png" class="circle-bg"><img src="media/user.png" class="icon-user"></div><div class="author-info"><h4 class="author-name">Артём Сазонов</h4><span class="review-date">02.10.2021</span></div></div>
+                </div>
+                <div class="review-item">
+                    <div class="review-bubble">
+                        <div class="bubble-header"><img src="media/апостраф.png" class="quote-icon"><img src="media/instagram 1.png" class="ig-icon"></div>
+                        <p class="review-text">"Все на высшем уровне. Особенно порадовал ресторан и завтраки. Номера чистые, персонал очень отзывчивый. Рекомендую!"</p>
+                    </div>
+                    <div class="review-author"><img src="media/саня.png" class="author-avatar"><div class="author-info"><h4 class="author-name">Александр Ким</h4><span class="review-date">02.10.2021</span></div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- СТРАНИЦА 2 (Скрыта) -->
+        <div class="reviews-page" id="revPage2" style="display: none;">
+            <div class="reviews-grid">
+                <div class="review-item">
+                    <div class="review-bubble">
+                        <div class="bubble-header"><img src="media/апостраф.png" class="quote-icon"><img src="media/instagram 1.png" class="ig-icon"></div>
+                        <p class="review-text">"Шикарная сауна на берегу! После парной сразу в Байкал — ощущения непередаваемые. База очень ухоженная и красивая."</p>
+                    </div>
+                    <div class="review-author"><div class="avatar-placeholder">ЕВ</div><div class="author-info"><h4 class="author-name">Елена Волкова</h4><span class="review-date">15.09.2021</span></div></div>
+                </div>
+                <div class="review-item">
+                    <div class="review-bubble">
+                        <div class="bubble-header"><img src="media/апостраф.png" class="quote-icon"><img src="media/instagram 1.png" class="ig-icon"></div>
+                        <p class="review-text">"Ездили на рыбалку. Муж доволен уловом, я — комфортом. Очень удобные кровати и современный интерьер в номерах."</p>
+                    </div>
+                    <div class="review-author"><div class="avatar-placeholder">ИП</div><div class="author-info"><h4 class="author-name">Игорь Петров</h4><span class="review-date">12.09.2021</span></div></div>
+                </div>
+                <div class="review-item">
+                    <div class="review-bubble">
+                        <div class="bubble-header"><img src="media/апостраф.png" class="quote-icon"><img src="media/instagram 1.png" class="ig-icon"></div>
+                        <p class="review-text">"Приезжаем сюда уже третий год подряд. Это наше место силы. Спасибо персоналу за теплый прием и домашний уют."</p>
+                    </div>
+                    <div class="review-author"><div class="avatar-placeholder">МС</div><div class="author-info"><h4 class="author-name">Марина Светлова</h4><span class="review-date">10.09.2021</span></div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- СТРАНИЦА 3 (Скрыта) -->
+        <div class="reviews-page" id="revPage3" style="display: none;">
+            <div class="reviews-grid">
+                <div class="review-item">
+                    <div class="review-bubble">
+                        <div class="bubble-header"><img src="media/апостраф.png" class="quote-icon"><img src="media/instagram 1.png" class="ig-icon"></div>
+                        <p class="review-text">"Сибирский чан — это просто чудо! Сидишь в горячей воде, смотришь на горы и озеро... Лучший релакс в моей жизни."</p>
+                    </div>
+                    <div class="review-author"><div class="avatar-placeholder">СИ</div><div class="author-info"><h4 class="author-name">Сергей Иванов</h4><span class="review-date">05.09.2021</span></div></div>
+                </div>
+                <div class="review-item">
+                    <div class="review-bubble">
+                        <div class="bubble-header"><img src="media/апостраф.png" class="quote-icon"><img src="media/instagram 1.png" class="ig-icon"></div>
+                        <p class="review-text">"Прокат велосипедов — отличная идея. Объездили все окрестности, природа вокруг базы просто потрясающая!"</p>
+                    </div>
+                    <div class="review-author"><div class="avatar-placeholder">АК</div><div class="author-info"><h4 class="author-name">Анна Кузнецова</h4><span class="review-date">02.09.2021</span></div></div>
+                </div>
+                <div class="review-item">
+                    <div class="review-bubble">
+                        <div class="bubble-header"><img src="media/апостраф.png" class="quote-icon"><img src="media/instagram 1.png" class="ig-icon"></div>
+                        <p class="review-text">"Всё понравилось: от бронирования до выезда. Профессиональный подход и искреннее гостеприимство. Вернемся зимой!"</p>
+                    </div>
+                    <div class="review-author"><div class="avatar-placeholder">ВМ</div><div class="author-info"><h4 class="author-name">Виктор Морозов</h4><span class="review-date">30.08.2021</span></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ПАГИНАЦИЯ (ГДЕ ВМЕСТО ЛИНИИ ТЕПЕРЬ PROGRESS) -->
+    <div class="reviews-pagination">
+        <div class="pg-numbers">
+            <span class="pg-num-muller" id="currentNum">01</span>
+            
+            <!-- ВОТ ОН, PROGRESS BAR -->
+            <div class="progress pg-line-bootstrap" role="progressbar" aria-label="Review Progress" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar" id="reviewProgress" style="width: 33%; background-color: #4C65AD;"></div>
+            </div>
+            
+            <span class="pg-num-muller">03</span>
+        </div>
+        <div class="pg-arrows-reviews">
+            <img src="media/Arrow 4 (1).png" class="arr-btn" id="prevReview" style="cursor:pointer">
+            <img src="media/Arrow 3 (1).png" class="arr-btn" id="nextReview" style="cursor:pointer">
+        </div>
+    </div>
+</section>
+    </div> <!-- /container main-content -->
+
+    <!-- === БАННЕР КЕШБЭК (ПОЛНОЭКРАННЫЙ) === -->
+    <section class="cashback-banner-section">
+        <div class="cashback-content">
+            <h2 class="cashback-title">Кешбэк по карте Мир</h2>
+            <div class="cashback-row">
+                <span class="cashback-percent">20%</span>
+                <img src="media/карта.png" alt="Карта Мир" class="bank-card-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- === FAQ (АККОРДЕОН) === -->
+<section class="faq-wrapper-custom">
+    <div class="container">
+        <div class="faq-inner">
+            <h2 class="faq-title">Ответы на вопросы</h2>
+            
+            <div class="accordion" id="faqAccordion">
+                <!-- Вопрос 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Как добраться до базы отдыха из Иркутска?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Вы можете добраться на личном автомобиле (около 250 км по Качугскому тракту) или заказать наш ежедневный трансфер, который отправляется от центрального стадиона г. Иркутска в 09:00.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Вопрос 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Возможно ли проживание с домашними животными?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Да, мы принимаем гостей с небольшими домашними животными по предварительному согласованию. За питомца может взиматься дополнительная плата.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Вопрос 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Есть ли на территории базы Wi-Fi?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Бесплатный Wi-Fi доступен в зоне ресторанного комплекса и в административном корпусе.
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- /accordion -->
+        </div>
+    </div>
+</section>
+
+<!-- РАЗДЕЛ КОНТАКТОв-->
+<section style="display: block; width: 100%; padding: 100px 0; background: #fff;" id="contacts">
+    <div class="container" style="display: flex !important; flex-direction: row !important; align-items: flex-start !important; gap: 75px !important; grid-template-columns: none !important;">
+        
+        <!-- ЛЕВАЯ ЧАСТЬ (КАРТА) -->
+        <div style="flex: 0 0 815px; width: 815px;">
+            <div style="display: flex; gap: 40px; margin-bottom: 30px;">
+                <span class="c-tab-fix">Схема проезда</span>
+                <span class="c-tab-fix active-tab">Карта базы</span>
+                <span class="c-tab-fix">Карта офиса</span>
+            </div>
+            <div style="width: 100%; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <img src="media/картабазы.png" alt="карта" style="width: 100%; display: block;">
+            </div>
+        </div>
+
+        <!-- ПРАВАЯ ЧАСТЬ (ИНФО) -->
+        <div style="flex: 1;" >
+            <h2 style="font-family: 'Gilroy', sans-serif; font-weight: 600; font-size: 35px; color: #151515; margin-bottom: 40px; margin-top: 0;">Наши контакты</h2>
+            
+            <div style="display: flex; flex-direction: column; gap: 35px;">
+                <!-- Телефоны -->
+                <div style="display: flex; gap: 20px;">
+                    <img src="media/телефонн.png" style="width: 40px; height: 40px; object-fit: contain;">
+                    <div>
+                        <div style="font-family: 'Gilroy'; font-size: 25px; margin-bottom: 5px;">Звоните по телефонам:</div>
+                        <div style="font-family: 'Gilroy'; font-weight: 600; font-size: 20px; line-height: 1.3;">
+                            +7 (3952) 56–00–26<br>+7 (3952) 95–26–55
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Почта -->
+                <div style="display: flex; gap: 20px;">
+                    <img src="media/конверт.png" style="width: 40px; height: 40px; object-fit: contain;">
+                    <div>
+                        <div style="font-family: 'Gilroy'; font-size: 25px; margin-bottom: 5px;">Электронная почта:</div>
+                        <div style="font-family: 'Gilroy'; font-weight: 600; font-size: 20px;">952655@rambler.ru</div>
+                    </div>
+                </div>
+
+                <!-- Офис -->
+                <div style="display: flex; gap: 20px;">
+                    <img src="media/адрес.png" style="width: 40px; height: 40px; object-fit: contain;">
+                    <div>
+                        <div style="font-family: 'Gilroy'; font-size: 25px; margin-bottom: 5px;">Адрес офиса:</div>
+                        <div style="font-family: 'Gilroy'; font-weight: 600; font-size: 20px;">г. Иркутск, ул. Волжская, 51а, 1 этаж</div>
+                    </div>
+                </div>
+
+                <!-- База -->
+                <div style="display: flex; gap: 20px;">
+                    <img src="media/адрес.png" style="width: 40px; height: 40px; object-fit: contain;">
+                    <div>
+                        <div style="font-family: 'Gilroy'; font-size: 25px; margin-bottom: 5px;">Адрес базы отдыха:</div>
+                        <div style="font-family: 'Gilroy'; font-weight: 600; font-size: 20px;">Ольхонский район, Куркутский залив, мыс Бурлог</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вопросы -->
+            <div style="margin-top: 60px;">
+               <div class="f-q-title">Остались вопросы?</div>
+              <div class="f-wa">
+                    <!-- Добавили класс f-wa-icon -->
+                    <img src="media/111wht.png" class="f-wa-icon" alt="whatsapp">
+                    <span>Напишите нам в <a href="#" style="text-decoration: underline; color: inherit;">WhatsApp</a></span>
+                </div>
+            </div>
+
+    </div>
+</section>
+
+     <!-- футер -->
+    <div class="footer-wrap">
+    <footer class="container footer-content">
+        <!-- Левая часть с навигацией (3 колонки) -->
+        <div class="footer-nav-group">
+            <div class="footer-col">
+                <a href="#">Главная</a>
+                <a href="#">Номера и цены</a>
+                <a href="#">Услуги и развлечения</a>
+            </div>
+            <div class="footer-col">
+                <a href="#">О нас</a>
+                <a href="#">Памятка туриста</a>
+                <a href="#">Схема проезда</a>
+            </div>
+            <div class="footer-col">
+                <a href="#">Отзывы</a>
+                <a href="#">Контакты</a>
+            </div>
+        </div>
+
+        <!-- Кнопка по центру -->
+        <div class="footer-btn-col">
+            <button type="button" class="btn-consult" data-bs-toggle="modal" data-bs-target="#modalConsultation">
+    ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+</button>
+        </div>
+
+        <!-- Информация справа -->
+        <div class="footer-info">
+            <p class="footer-phone">+7 (3952) 56-00-26</p>
+            <span class="footer-work-time">Режим работы с 10:00 до 22:00</span>
+            <div class="footer-socials">
+                <a href="#"><img src="media/viber-logo1.png" alt="vb"></a>
+                <a href="#"><img src="media/instagram1.png" alt="ig"></a>
+                <a href="#"><img src="media/whatsapp-logo1.png" alt="wa"></a>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- === OFF CANVAS ПАНЕЛЬ ДЛЯ ЗАКАЗА ЗВОНКА === -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCallback" aria-labelledby="offcanvasCallbackLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasCallbackLabel">Заказать обратный звонок</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Оставьте ваши данные, и мы свяжемся с вами в ближайшее время для уточнения деталей.</p>
+    
+    <!-- Форма внутри панели -->
+    <form>
+      <div class="mb-3">
+        <label for="offcanvasName" class="form-label">Ваше имя</label>
+        <input type="text" class="form-control" id="offcanvasName" placeholder="Иван">
+      </div>
+      <div class="mb-3">
+        <label for="offcanvasPhone" class="form-label">Ваш телефон</label>
+        <input type="tel" class="form-control" id="offcanvasPhone" placeholder="+7 (999) 123-45-67">
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Отправить</button>
+    </form>
+  </div>
+</div>
+<!-- === MODAL ОКНО === -->
+<div class="modal fade" id="modalConsultation" tabindex="-1" aria-labelledby="modalConsultationLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="border-radius: 15px; overflow: hidden;">
+      <div class="modal-header" style="background-color: #007bff; color: white;">
+        <h5 class="modal-title" id="modalConsultationLabel">Получить консультацию</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+      </div>
+      <div class="modal-body p-4">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Как к вам обращаться?</label>
+            <input type="text" class="form-control" placeholder="Ваше имя">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Номер телефона</label>
+            <input type="tel" class="form-control" placeholder="+7 (___) ___-__-__">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Ваш вопрос (необязательно)</label>
+            <textarea class="form-control" rows="3" placeholder="О чем вы хотели бы узнать?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100 py-2" style="font-weight: 600;">ОТПРАВИТЬ ЗАЯВКУ</button>
+        </form>
+      </div>
+      <div class="modal-footer justify-content-center border-0 pb-4">
+        <small class="text-muted">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</small>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Контейнер для уведомлений (позиционирование в нижнем правом углу) -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1100;">
+  <!-- Проверь эту строку в HTML -->
+<div id="liveToast" class="toast fade" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="3000">
+    <div class="toast-header text-white" style="background-color: #007bff;">
+      <strong class="me-auto">База отдыха «Фрегат»</strong>
+      <small>сейчас</small>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+    </div>
+    <div class="toast-body">
+      Спасибо! Ваша заявка принята. Менеджер перезвонит вам в течение 15 минут.
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Код для инициализации всех Tooltips на странице
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+const toastTrigger = document.getElementById('liveToastBtn');
+const toastLiveExample = document.getElementById('liveToast');
+
+if (toastTrigger && toastLiveExample) {
+    // Инициализируем тост с параметрами
+    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample, {
+        autohide: true,
+        delay: 3000
+    });
+
+    toastTrigger.addEventListener('click', () => {
+        console.log("Попытка показать тост..."); // Это появится в консоли F12
+        toastBootstrap.show();
+    });
+}
+    </script>
+    <script>
+        // Код для инициализации всех Popovers на странице
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+<script>
+    let currentRevPage = 1;
+    const totalRevPages = 3;
+
+    function updateReviews(newPage) {
+        // Скрываем все страницы
+        document.querySelectorAll('.reviews-page').forEach(p => p.style.display = 'none');
+        // Показываем нужную
+        document.getElementById('revPage' + newPage).style.display = 'block';
+        
+        // Обновляем число
+        document.getElementById('currentNum').innerText = '0' + newPage;
+        
+        // Обновляем прогресс-бар (33%, 66%, 100%)
+        let progressPercent = (newPage / totalRevPages) * 100;
+        document.getElementById('reviewProgress').style.width = progressPercent + '%';
+        
+        currentRevPage = newPage;
+    }
+
+    document.getElementById('nextReview').addEventListener('click', () => {
+        let next = currentRevPage + 1;
+        if (next > totalRevPages) next = 1; // Циклично к началу
+        updateReviews(next);
+    });
+
+    document.getElementById('prevReview').addEventListener('click', () => {
+        let prev = currentRevPage - 1;
+        if (prev < 1) prev = totalRevPages; // Циклично в конец
+        updateReviews(prev);
+    });
+</script>
+</body>
+</html>
